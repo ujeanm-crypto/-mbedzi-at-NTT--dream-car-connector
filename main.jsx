@@ -176,41 +176,106 @@ function App() {
       </header>
 
       <main id="top">
-        <section className="hero">
-          <div className="hero-bg" />
-          <div className="container hero-grid">
-            <div className="hero-copy">
-              <div className="eyebrow"><Sparkles size={16} /> THE DREAM CAR CONNECTOR</div>
-              <h1>One consultant.<br /><span>So many ways</span> to find your car.</h1>
-              <p className="hero-lead">
-                I help you find new, demo and quality used vehicles through the NTT Motor Group network — with personal guidance from first enquiry to delivery.
-              </p>
-              <div className="hero-actions">
-                <a className="button primary" href="#contact">Find My Car <ArrowRight size={19} /></a>
-                <a className="button secondary" href={`tel:${PHONE}`}><Phone size={18} /> Call {PHONE_DISPLAY}</a>
-              </div>
-              <div className="hero-trust">
-                <span><BadgeCheck size={18} /> NTT Motor Group</span>
-                <span><BadgeCheck size={18} /> Multiple leading brands</span>
-                <span><BadgeCheck size={18} /> Nationwide reach</span>
-              </div>
-            </div>
+  <section className="hero">
+  <div className="hero-bg" />
 
-            <div className="hero-card">
-              <div className="hero-photo">
-                <img src="/images/phumudzo-1.jpeg" alt="Phumudzo Eugene Mbedzi, NTT Motor Group vehicle sales consultant" />
-                <div className="photo-caption">
-                  <span>Phumudzo Eugene Mbedzi</span>
-                  <small>Vehicle Sales Consultant</small>
-                </div>
-              </div>
-              <div className="hero-card-bottom">
-                <div><Phone size={17} /><strong>{PHONE_DISPLAY}</strong></div>
-                <div><Mail size={17} /><strong>{EMAIL}</strong></div>
-              </div>
-            </div>
-          </div>
-        </section>
+  <div className="container hero-grid">
+    <div className="hero-copy">
+
+      <div className="eyebrow">
+        <Sparkles size={16} />
+        THE DREAM CAR CONNECTOR
+      </div>
+
+      <h1>
+        THE CAR MATTERS.
+        <br />
+        <span>BUT YOU MATTER MORE.</span>
+      </h1>
+
+      <p className="hero-lead">
+        I don't just sell cars. I help people find the right car,
+        the right deal and the right solution — with personal guidance
+        from first enquiry to delivery.
+      </p>
+
+      <div className="hero-actions">
+
+        <a className="button primary" href="#contact">
+          <CarFront size={19} />
+          FIND MY CAR
+          <ArrowRight size={19} />
+        </a>
+
+        <a
+          className="button secondary"
+          href={`https://wa.me/${WHATSAPP}?text=${encodeURIComponent(
+            "Hello Phumudzo, I'd like help finding my dream car."
+          )}`}
+          target="_blank"
+          rel="noreferrer"
+        >
+          <MessageCircle size={18} />
+          WHATSAPP EUGENE
+        </a>
+
+      </div>
+
+      <div className="hero-trust">
+
+        <span>
+          <BadgeCheck size={18} />
+          NEW • DEMO • USED
+        </span>
+
+        <span>
+          <BadgeCheck size={18} />
+          17+ BRANDS
+        </span>
+
+        <span>
+          <BadgeCheck size={18} />
+          NATIONWIDE
+        </span>
+
+      </div>
+
+    </div>
+
+    <div className="hero-card">
+
+      <div className="hero-photo">
+
+        <img
+          src="/images/phumudzo-1.jpeg"
+          alt="Phumudzo Eugene Mbedzi, The Dream Car Connector"
+        />
+
+        <div className="photo-caption">
+          <span>Phumudzo Eugene Mbedzi</span>
+          <small>THE DREAM CAR CONNECTOR</small>
+        </div>
+
+      </div>
+
+      <div className="hero-card-bottom">
+
+        <div>
+          <Phone size={17} />
+          <strong>{PHONE_DISPLAY}</strong>
+        </div>
+
+        <div>
+          <MessageCircle size={17} />
+          <strong>WhatsApp Me</strong>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
 
         <section className="stats">
           <div className="container stats-grid">
